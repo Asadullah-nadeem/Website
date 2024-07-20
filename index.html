@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="container">
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+        </div>
+    </div>
+    <div id="content" class="container mt-4" style="display: none;">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="left-side">
+                    <img src="https://avatars.githubusercontent.com/u/88024587?v=4" alt="Profile Pic" class="profile-pic" data-toggle="modal" data-target="#imageModal">
+                    <h3 class="authorname">Asadullah Nadeem</h3>
+                    <p class="authordescription">
+                        Each day, grow stronger, paving the path for boundless tomorrows.
+                        Python JavaScript TypeScript PHP Node.js Java Kotlin MySql
+                    </p>
+                    <div class="social-icons">
+                        <img src="github-logo.png" alt="GitHub">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                <input type="text" class="form-control mb-3" placeholder="Search Bar">
+                <div class="content-box">
+                    <div class="heading-container">
+                        <img src="https://via.placeholder.com/850" alt="Heading Image" data-toggle="modal" data-target="#imageModal">
+                        <img src="https://via.placeholder.com/850" alt="Heading Image" data-toggle="modal" data-target="#imageModal">
+                        <img src="https://via.placeholder.com/850" alt="Heading Image" data-toggle="modal" data-target="#imageModal">
+                        <img src="https://via.placeholder.com/850" alt="Heading Image" data-toggle="modal" data-target="#imageModal">
+                        <img src="https://via.placeholder.com/850" alt="Heading Image" data-toggle="modal" data-target="#imageModal">
+                        <img src="https://via.placeholder.com/850" alt="Heading Image" data-toggle="modal" data-target="#imageModal">
+                        <img src="https://via.placeholder.com/850" alt="Heading Image" data-toggle="modal" data-target="#imageModal">
+                        <img src="https://via.placeholder.com/850" alt="Heading Image" data-toggle="modal" data-target="#imageModal">
+                        <img src="https://via.placeholder.com/850" alt="Heading Image" data-toggle="modal" data-target="#imageModal">
+
+                    </div>
+                    <p class="hh">Body text for your whole article or post. We'll put in some lorem ipsum to show how a filled-out page might look:</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, architecto?</p>
+                    <!-- <button class="btn btn-custom">Button</button> -->
+                    <button class="btn btn-Green" id="downloadButton">Download</button>
+                    <div id="timer" style="display: none;"></div>
+
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <button class="page-link" id="prevButton" disabled>Previous</button>
+                </li>
+                <li class="page-item">
+                    <button class="page-link" id="nextButton">Next</button>
+                </li>
+            </ul>
+        </nav>
+        <footer class="footer mt-auto py-3 bg-light">
+            <div class="container">
+                <i class="fas fa-location-pin"></i> <span class="text-muted"><span id="ip-address">Loading...</span></span>
+                <span class="text-muted"> |       
+                    <i class="fas fa-bug"></i> <a href="mailto:asadullah@codeaxe.co.in">  asadullah@codeaxe.co.in</a></span>
+                    |                 <i class="fas fa-code-pull-request"></i> <span></span><a class="Compiler" href="Compiler.html">Online Compiler</a></span></span>
+                    |                 <i class="fab fa-ioxhost"></i> <span></span><a class="Compiler" href="Hosting.html"> Free Hosting</a></span></span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="" alt="Full Screen Image" id="fullScreenImage" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
